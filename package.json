@@ -1,0 +1,17 @@
+{
+  "name": "slidev-and-distributed-apps",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.48.1",
+    "@slidev/theme-apple-basic": "^0.25.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.4.21"
+  }
+}
