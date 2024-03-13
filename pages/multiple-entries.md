@@ -1,13 +1,13 @@
-# Multiple Entries
+# Multiples Entradas
 
-You can split your slides.md into multiple files and organize them as you want using the `src` attribute.
+Puedes dividir tu slides.md en varios archivos y organizarlos como quieras usando el atributo `src`.
 
 #### `slides.md`
 
 ```markdown
 # Page 1
 
-Page 2 from main entry.
+Page 2 de la entrada
 
 ---
 src: ./subpage.md
@@ -21,7 +21,7 @@ src: ./subpage.md
 ```markdown
 # Page 2
 
-Page 2 from another file.
+Pagina 2 desde otro archivo
 ```
 
-[Learn more](https://sli.dev/guide/syntax.html#multiple-entries)
+[Ver mas](https://sli.dev/guide/syntax.html#multiple-entries)

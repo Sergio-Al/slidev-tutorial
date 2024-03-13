@@ -266,7 +266,7 @@ export default {
 }
 ```
 
-Non-code blocks are ignored.
+Codigo no relacionado es ignorado.
 
 ```vue
 <!-- step 4 -->
@@ -285,14 +285,14 @@ const author = {
 
 ---
 
-# Components
+# Componentes
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+Puedes usar componentes Vue directamente en tus diapositivas.
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+Se ha proporcionado algunos componentes integrados como `<Tweet/>` y `<Youtube/>` que puedes usar directamente. Y agregar tus propios componentes también es muy fácil.
 
 ```html
 <Counter :count="10" />
@@ -301,7 +301,7 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 <!-- ./components/Counter.vue -->
 <Counter :count="10" m="t-4" />
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+Comprueba [Las guias](https://sli.dev/builtin/components.html) para mas detalles.
 
 </div>
 <div>
@@ -315,23 +315,24 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 </div>
 </div>
 
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
+<!--=
+Nota de presentador con **bold**, *italic*, y ~~striked~~.
 
-Also, HTML elements are valid:
+Tambien, elementos HTML son validos:
 <div class="flex w-full">
   <span style="flex-grow: 1;">Left content</span>
   <span>Right content</span>
 </div>
+
 -->
 
 ---
 class: px-20
 ---
 
-# Themes
+# Temas
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+Slidev viene con un poderoso soporte de temas. Los temas pueden proporcionar estilos, diseños, componentes o incluso configuraciones para herramientas. Cambiando entre temas con solo **one edit** en tu frontmatter:
 
 <div grid="~ cols-2 gap-2" m="t-2">
 
@@ -353,14 +354,14 @@ theme: seriph
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+Descubre mas [Como usar un tema](https://sli.dev/themes/use.html) y
+Echa un vistazo a [Galeria de temas](https://sli.dev/themes/gallery.html).
 
 ---
 
 # Clicks Animations
 
-You can add `v-click` to elements to add a click animation.
+Puedes agregar `v-click` a elementos para agregar una animación de clic.
 
 <div v-click>
 
@@ -376,10 +377,7 @@ This shows up when you click the slide:
 
 <v-click>
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+La directiva <span v-mark.red="3"><code>v-mark</code></span> también te permite agregar <span v-mark.circle.orange="4">marcadores en línea</span>, impulsado por [Rough Notation](https://roughnotation.com/):
 
 ```html
 <span v-mark.underline.orange>inline markers</span>
@@ -389,7 +387,7 @@ also allows you to add
 
 <div mt-20 v-click>
 
-[Learn More](https://sli.dev/guide/animations#click-animations)
+[Ver mas](https://sli.dev/guide/animations#click-animations)
 
 </div>
 
@@ -397,9 +395,9 @@ also allows you to add
 preload: false
 ---
 
-# Motions
+# Animaciones
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
+Animaciones de movimiento son impulsadas por [@vueuse/motion](https://motion.vueuse.org/), activadas por la directiva `v-motion`.
 
 ```html
 <div
@@ -443,7 +441,7 @@ Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), t
     v-motion
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
+    Slidev Demo
   </div>
 </div>
 
@@ -468,7 +466,7 @@ const final = {
   :initial="{ x:35, y: 40, opacity: 0}"
   :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
 
-[Learn More](https://sli.dev/guide/animations.html#motion)
+[Ver mas](https://sli.dev/guide/animations.html#motion)
 
 </div>
 
@@ -476,7 +474,7 @@ const final = {
 
 # LaTeX
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+LaTeX es soportado por defecto, impulsado por [KaTeX](https://katex.org/).
 
 <br>
 
@@ -498,17 +496,17 @@ $$
 
 <br>
 
-[Learn more](https://sli.dev/guide/syntax#latex)
+[Mas informacion](https://sli.dev/guide/syntax#latex)
 
 ---
 
-# Diagrams
+# Diagramas
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+Puedes crear diagramas/gráficos a partir de descripciones textuales, directamente en tu Markdown.
 
 <div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
 
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
+```mermaid {scale: 0.5, alt: 'Un diagrama de secuencia simple'}
 sequenceDiagram
     Alice->John: Hello John, how are you?
     Note over Alice,John: A typical interaction
@@ -576,7 +574,7 @@ database "MySql" {
 
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+[Mas informacion](https://sli.dev/guide/syntax.html#diagrams)
 
 ---
 src: ./pages/multiple-entries.md
@@ -585,11 +583,11 @@ hide: false
 
 ---
 
-# Monaco Editor
+# Editor Monaco
 
-Slidev provides built-in Moanco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
+Slidev proporciona soporte integrado para el editor Monaco.
+ 
+Agrega `{monaco}` al bloque de código para convertirlo en un editor:
 
 ```ts {monaco}
 import { ref } from 'vue'
@@ -599,7 +597,7 @@ const code = ref('const a = 1')
 hello()
 ```
 
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
+Usa `{monaco-run}` para crear un editor que puede ejecutar el código directamente en la diapositiva:
 
 ```ts {monaco-run}
 function fibonacci(n: number): number {
@@ -616,6 +614,6 @@ layout: center
 class: text-center
 ---
 
-# Learn More
+# Gracias!
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
